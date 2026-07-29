@@ -74,6 +74,12 @@ TEMPLATES = {
     "fingerspell_c": "C.",
     "fingerspell_b": "B.",
     "fingerspell_a": "A.",
+    "vsl_saigon": "Saigon (VSL)",
+    "vsl_rice": "Rice (VSL)",
+    "vsl_water": "Water (VSL)",
+    "vsl_hello": "Hello! (VSL)",
+    "vsl_thankyou": "Thank you (VSL)",
+    "vsl_goodbye": "Goodbye! (VSL)",
 }
 
 

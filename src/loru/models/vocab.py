@@ -88,6 +88,9 @@ DEFAULT_GLOSS = [
     "vsl_saigon",
     "vsl_rice",
     "vsl_water",
+    "vsl_hello",
+    "vsl_thankyou",
+    "vsl_goodbye",
 ]
 
 
