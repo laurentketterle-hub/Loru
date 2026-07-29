@@ -88,6 +88,9 @@ DEFAULT_GLOSS = [
     "vsl_name",
     "vsl_vietnam",
     "vsl_hanoi",
+    "vsl_hello",
+    "vsl_thankyou",
+    "vsl_goodbye",
 ]
 
 
