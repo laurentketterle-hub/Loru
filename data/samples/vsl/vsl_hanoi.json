@@ -1,0 +1,40 @@
+{
+  "word": "Hanoi (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_hanoi",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Both hands flat, palms down",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Push hands forward twice",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Slight downward press",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Hands separate slightly",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL Hanoi city sign"
+  }
+}

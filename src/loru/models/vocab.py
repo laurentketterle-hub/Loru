@@ -85,6 +85,9 @@ DEFAULT_GLOSS = [
     "fingerspell_c",
     "fingerspell_b",
     "fingerspell_a",
+    "vsl_name",
+    "vsl_vietnam",
+    "vsl_hanoi",
 ]
 
 

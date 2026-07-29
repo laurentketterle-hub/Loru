@@ -1,0 +1,40 @@
+{
+  "word": "name (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_name",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Index and middle fingers extended, other fingers curled",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Tap fingers on opposite palm",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Small bounce motion",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Fingers extend outward",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL name / identify gesture"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "word": "Vietnam (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_vietnam",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Open hand, palm facing inward",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Circular motion over chest area",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Continue circle with slight body lean",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Hand comes to rest at center",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL Vietnam national sign"
+  }
+}
