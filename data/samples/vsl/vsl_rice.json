@@ -1,0 +1,40 @@
+{
+  "word": "rice (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_rice",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Cupped hand, palm up",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Bring hand to mouth area",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Small scooping motion",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Fingers close slightly",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL rice / food staple gesture"
+  }
+}

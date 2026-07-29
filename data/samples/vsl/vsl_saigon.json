@@ -1,0 +1,40 @@
+{
+  "word": "Saigon (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_saigon",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Index finger points downward",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Draw small circle on flat palm",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Two quick taps with index",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Hand opens palm up",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL Saigon / Ho Chi Minh City sign"
+  }
+}

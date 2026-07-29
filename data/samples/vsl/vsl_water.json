@@ -1,0 +1,40 @@
+{
+  "word": "water (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_water",
+  "frames": [
+    {
+      "id": 1,
+      "description": "W handshape (three fingers extended)",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Tap chin twice",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Fingers wiggle slightly",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Hand moves outward",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL water / drink gesture"
+  }
+}
