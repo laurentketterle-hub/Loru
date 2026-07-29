@@ -1,0 +1,40 @@
+{
+  "word": "love (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_love",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Hands crossed over chest",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Palms face inward",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Press to heart",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Hold with slight lean",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Release gently",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL love / like strong affect"
+  }
+}

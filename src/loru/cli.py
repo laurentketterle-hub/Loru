@@ -414,3 +414,12 @@ def eval_report_cmd(
 
     output_path = Path(out) if out else RUNS_DIR / "metrics.json"
     generate_report(output_path=output_path, top_k=top_k)
+
+# VSL sentence template for vsl_love
+GLOSS_SENTENCES["vsl_love"] = "I love you"
+
+# VSL sentence template for vsl_help
+GLOSS_SENTENCES["vsl_help"] = "Can you help me"
+
+# VSL sentence template for vsl_sorry
+GLOSS_SENTENCES["vsl_sorry"] = "I am sorry"

@@ -1,0 +1,40 @@
+{
+  "word": "sorry (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_sorry",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Open hand, palm facing chest",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Circular motion clockwise",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Continue rotation",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Slight bow of head",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL sorry / apology gesture"
+  }
+}

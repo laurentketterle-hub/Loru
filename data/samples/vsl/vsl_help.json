@@ -1,0 +1,40 @@
+{
+  "word": "help (VSL)",
+  "type": "gloss",
+  "language": "vsl",
+  "gloss": "vsl_help",
+  "frames": [
+    {
+      "id": 1,
+      "description": "Dominant hand flat, palm up",
+      "duration_ms": 250
+    },
+    {
+      "id": 2,
+      "description": "Non-dominant hand under elbow",
+      "duration_ms": 300
+    },
+    {
+      "id": 3,
+      "description": "Lift both hands upward",
+      "duration_ms": 200
+    },
+    {
+      "id": 4,
+      "description": "Slight forward push",
+      "duration_ms": 250
+    },
+    {
+      "id": 5,
+      "description": "Return to neutral",
+      "duration_ms": 300
+    }
+  ],
+  "metadata": {
+    "source": "contributor-capture",
+    "contributor": "laurentketterle-hub",
+    "version": "1.0",
+    "category": "vsl",
+    "description": "VSL help / assist gesture"
+  }
+}
