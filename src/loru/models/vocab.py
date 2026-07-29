@@ -85,6 +85,12 @@ DEFAULT_GLOSS = [
     "fingerspell_c",
     "fingerspell_b",
     "fingerspell_a",
+    "vsl_love",
+    "vsl_help",
+    "vsl_sorry",
+    "vsl_hello",
+    "vsl_thankyou",
+    "vsl_goodbye",
 ]
 
 

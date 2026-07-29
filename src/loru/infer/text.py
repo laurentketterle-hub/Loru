@@ -74,6 +74,12 @@ TEMPLATES = {
     "fingerspell_c": "C.",
     "fingerspell_b": "B.",
     "fingerspell_a": "A.",
+    "vsl_love": "I love you (VSL)",
+    "vsl_help": "Can you help me (VSL)",
+    "vsl_sorry": "I am sorry (VSL)",
+    "vsl_hello": "Hello! (VSL)",
+    "vsl_thankyou": "Thank you (VSL)",
+    "vsl_goodbye": "Goodbye! (VSL)",
 }
 
 
