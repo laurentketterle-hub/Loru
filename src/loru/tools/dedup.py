@@ -82,18 +82,19 @@ def compare_hashes(
 
 
 def scan_directory(
-    directory: Path,
+    directory: Path | str,
     threshold: float = 0.5,
 ) -> list[dict[str, Any]]:
     """Scan a directory of gloss JSON files for near-duplicates.
 
     Args:
-        directory: Path containing *.json gloss files
+        directory: Path (or str) containing *.json gloss files
         threshold: Minimum overlap ratio to report (0.0-1.0)
 
     Returns:
         List of duplicate reports, each with file_a, file_b, and comparison data.
     """
+    directory = Path(directory)
     json_files = sorted(directory.glob("*.json"))
     reports: list[dict[str, Any]] = []
 
