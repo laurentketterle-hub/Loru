@@ -12,6 +12,11 @@
 
 ---
 
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, workflow, and bounty claim instructions.
+
 ## Table of contents
 
 - [Highlights](#highlights)
