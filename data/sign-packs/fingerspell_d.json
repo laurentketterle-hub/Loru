@@ -1,0 +1,53 @@
+{
+  "gloss": "fingerspell_d",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "Fingerspell letter D \u2014 index finger extended up, other fingers folded, thumb touches middle finger tip",
+    "source_language": "en",
+    "gloss": "d",
+    "vocab": [
+      {
+        "form": "d",
+        "pos": "letter",
+        "gloss_en": "d",
+        "example_en": "The letter d in fingerspelling."
+      }
+    ],
+    "frames": [
+      {
+        "id": "d_frame_0",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "one_index",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "d_frame_1",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "one_index",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "trace_circle",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "d_frame_2",
+        "duration_ms": 300,
+        "pose": {
+          "handshape": "one_index",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "release",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

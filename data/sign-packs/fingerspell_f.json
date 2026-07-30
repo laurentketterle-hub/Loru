@@ -1,0 +1,53 @@
+{
+  "gloss": "fingerspell_f",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "Fingerspell letter F \u2014 index and thumb form circle, other three fingers extended up",
+    "source_language": "en",
+    "gloss": "f",
+    "vocab": [
+      {
+        "form": "f",
+        "pos": "letter",
+        "gloss_en": "f",
+        "example_en": "The letter f in fingerspelling."
+      }
+    ],
+    "frames": [
+      {
+        "id": "f_frame_0",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "f_hand",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "f_frame_1",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "f_hand",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "wiggle",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "f_frame_2",
+        "duration_ms": 300,
+        "pose": {
+          "handshape": "f_hand",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "release",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

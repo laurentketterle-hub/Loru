@@ -1,0 +1,53 @@
+{
+  "gloss": "fingerspell_b",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "Fingerspell letter B \u2014 palm forward, fingers extended up, thumb folded across palm",
+    "source_language": "en",
+    "gloss": "b",
+    "vocab": [
+      {
+        "form": "b",
+        "pos": "letter",
+        "gloss_en": "b",
+        "example_en": "The letter b in fingerspelling."
+      }
+    ],
+    "frames": [
+      {
+        "id": "b_frame_0",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "flat_open",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "b_frame_1",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "flat_open",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "present",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "b_frame_2",
+        "duration_ms": 300,
+        "pose": {
+          "handshape": "flat_open",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "release",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

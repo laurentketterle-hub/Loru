@@ -1,0 +1,53 @@
+{
+  "gloss": "fingerspell_e",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "Fingerspell letter E \u2014 fingers folded down, thumb touches side of hand",
+    "source_language": "en",
+    "gloss": "e",
+    "vocab": [
+      {
+        "form": "e",
+        "pos": "letter",
+        "gloss_en": "e",
+        "example_en": "The letter e in fingerspelling."
+      }
+    ],
+    "frames": [
+      {
+        "id": "e_frame_0",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "claw_spread",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "e_frame_1",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "claw_spread",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "press",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "e_frame_2",
+        "duration_ms": 300,
+        "pose": {
+          "handshape": "claw_spread",
+          "palm_orientation": "outward",
+          "non_dominant": "rest",
+          "movement": "release",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}
