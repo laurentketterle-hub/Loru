@@ -1,0 +1,12 @@
+{
+  "photos": [
+    {
+      "id": "vsl_home_front",
+      "view": "front"
+    },
+    {
+      "id": "vsl_home_side",
+      "view": "side"
+    }
+  ]
+}
