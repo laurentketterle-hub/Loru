@@ -102,7 +102,21 @@ def gloss_to_sentence(gloss: str) -> str:
     return key.replace("_", " ").strip().capitalize() + "."
 
 
-def multi_gloss_to_sentence(glosses: list[str]) -> str:
+def multi_gloss_to_sentence(glosses: list[str], locale: str = "EN") -> str:
+    """Convert a gloss sequence using the NLG template engine.
+
+    Routes through GlossNLG when templates match; falls back to
+    simple concatenation for unmatched sequences.
+    """
+    try:
+        from loru.nlg.engine import GlossNLG
+        engine = GlossNLG(locale=locale)
+        result = engine.generate(glosses)
+        if result:
+            return result
+    except Exception:
+        pass
+    # Fallback: original concatenation behaviour
     parts = [gloss_to_sentence(g).rstrip(".") for g in glosses if g.strip()]
     if not parts:
         return ""
