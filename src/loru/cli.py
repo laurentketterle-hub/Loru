@@ -202,6 +202,32 @@ def data_wlasl_manifest(
     console.print_json(data=load_wlasl_manifest(index, samples_dir=samples_dir))
 
 
+
+@data_app.command("coverage-heatmap")
+def data_coverage_heatmap(
+    gloss: str = typer.Option(None, "--gloss", "-g", help="Filter by gloss substring"),
+    directory: str = typer.Option(None, "--directory", "-d", help="Custom samples directory"),
+    vocab_file: str = typer.Option(None, "--vocab", "-v", help="Custom vocab file"),
+    json_out: bool = typer.Option(False, "--json", help="Output as JSON instead of heatmap"),
+) -> None:
+    """Show gloss sample coverage as a rich heatmap."""
+    if json_out:
+        import json
+        stats = compute_coverage_stats(
+            samples_dir=Path(directory) if directory else None,
+            vocab_file=Path(vocab_file) if vocab_file else None,
+        )
+        console.print_json(data=stats)
+        return
+    
+    dir_path = Path(directory) if directory else None
+    vocab_path = Path(vocab_file) if vocab_file else None
+    print_coverage_heatmap(
+        samples_dir=dir_path,
+        gloss_filter=gloss,
+        vocab_file=vocab_path,
+    )
+
 @data_app.command("export-csv")
 def data_export_csv(
     out: Path = typer.Option(None, "--out", "-o", help="Output CSV file path. Default: data/out/vocab_export.csv"),
@@ -248,6 +274,7 @@ def gloss_compare(
 ) -> None:
     """Compare frame counts and a crude time-aligned landmark distance."""
     from loru.data.compare import compare_gloss_samples
+from loru.data.coverage import print_coverage_heatmap, compute_coverage_stats
 
     try:
         console.print_json(data=compare_gloss_samples(sample_a, sample_b))
