@@ -15,7 +15,7 @@ from loru.data.stats import compute_sequence_stats, detect_outliers, print_stats
 from loru.data.wlasl import load_wlasl_manifest, write_wlasl_manifest
 from loru.infer.pipeline import sign_to_voice
 from loru.infer.text import gloss_to_sentence, multi_gloss_to_sentence, sign_to_text
-from loru.models.vocab import DEFAULT_GLOSS
+from loru.models.vocab import DEFAULT_GLOSS, VOCAB_PATH, load_vocab, save_vocab
 from loru.train.toy_train import train_toy
 
 app = typer.Typer(
@@ -28,12 +28,14 @@ infer_app = typer.Typer(help="Inference (sign→text / sign→voice)")
 train_app = typer.Typer(help="Training")
 eval_app = typer.Typer(help="Evaluation")
 gloss_app = typer.Typer(help="Inspect and compare gloss samples")
+vocab_app = typer.Typer(help="Manage gloss vocabulary")
 app.add_typer(data_app, name="data")
 app.add_typer(samples_app, name="samples")
 app.add_typer(infer_app, name="infer")
 app.add_typer(train_app, name="train")
 app.add_typer(eval_app, name="eval")
 app.add_typer(gloss_app, name="gloss")
+app.add_typer(vocab_app, name="vocab")
 console = Console()
 
 
@@ -402,6 +404,62 @@ def serve_cmd(
 if __name__ == "__main__":
     app()
 
+
+
+
+@vocab_app.command("list")
+def vocab_list(
+    file: str = typer.Option(None, "--file", "-f", help="Custom vocab file path"),
+) -> None:
+    """List the current gloss vocabulary with source info."""
+    target = Path(file) if file else None
+    vocab = load_vocab(target)
+    source = str(target or VOCAB_PATH)
+    loaded_from_file = (target or VOCAB_PATH).exists() if target else VOCAB_PATH.exists()
+
+    table = Table(title=f"Gloss Vocabulary ({len(vocab)} entries)")
+    table.add_column("#", justify="right")
+    table.add_column("Gloss")
+    table.add_column("Has Sample", justify="center")
+
+    files = {p.stem for p in list_sample_files()}
+    for i, g in enumerate(vocab):
+        has_sample = "Y" if g in files else "-"
+        table.add_row(str(i), g, has_sample)
+
+    console.print(table)
+    tag = "(custom file)" if loaded_from_file else "(built-in DEFAULT_GLOSS)"
+    console.print(f"[dim]Source: {source} {tag}[/dim]")
+
+
+@vocab_app.command("add")
+def vocab_add(
+    gloss: str = typer.Option(..., "--gloss", "-g", help="Gloss to add to the vocabulary"),
+    file: str = typer.Option(None, "--file", "-f", help="Custom vocab file path"),
+) -> None:
+    """Add a gloss to the vocabulary file."""
+    target = Path(file) if file else VOCAB_PATH
+    current = load_vocab(target)
+    clean = gloss.strip().lower()
+    if clean in current:
+        console.print(f"[yellow]Gloss '{clean}' already exists[/yellow]")
+        raise typer.Exit(code=1)
+    current.append(clean)
+    save_vocab(current, target)
+    console.print(f"[green]Added '{clean}' -> {target} ({len(current)} entries)[/green]")
+
+
+@vocab_app.command("init")
+def vocab_init(
+    file: str = typer.Option(None, "--file", "-f", help="Custom vocab file path"),
+) -> None:
+    """Initialize a custom vocab file from DEFAULT_GLOSS."""
+    target = Path(file) if file else VOCAB_PATH
+    if target.exists():
+        console.print(f"[yellow]File already exists: {target}[/yellow]")
+        raise typer.Exit(code=1)
+    save_vocab(DEFAULT_GLOSS, target)
+    console.print(f"[green]Created {target} with {len(DEFAULT_GLOSS)} entries[/green]")
 
 @eval_app.command("report")
 def eval_report_cmd(
