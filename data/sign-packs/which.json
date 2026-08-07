@@ -1,0 +1,42 @@
+{
+  "gloss": "which",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "which",
+    "vocab": [
+      {
+        "form": "which",
+        "pos": "question",
+        "gloss_en": "which",
+        "example_en": "The sign which (question)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "which_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "which_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

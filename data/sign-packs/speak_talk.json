@@ -1,0 +1,42 @@
+{
+  "gloss": "speak_talk",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "speak_talk",
+    "vocab": [
+      {
+        "form": "speak_talk",
+        "pos": "noun",
+        "gloss_en": "speak_talk",
+        "example_en": "The sign speak_talk (action)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "speak_talk_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "speak_talk_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

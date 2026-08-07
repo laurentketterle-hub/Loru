@@ -1,0 +1,42 @@
+{
+  "gloss": "eyebrows_furrowed_wh",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "eyebrows_furrowed_wh",
+    "vocab": [
+      {
+        "form": "eyebrows_furrowed_wh",
+        "pos": "body_part",
+        "gloss_en": "eyebrows_furrowed_wh",
+        "example_en": "The sign eyebrows_furrowed_wh (body)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "eyebrows_furrowed_wh_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "eyebrows_furrowed_wh_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

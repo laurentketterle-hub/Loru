@@ -1,0 +1,42 @@
+{
+  "gloss": "vsl_hello",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "vsl_hello",
+    "vocab": [
+      {
+        "form": "vsl_hello",
+        "pos": "language",
+        "gloss_en": "vsl_hello",
+        "example_en": "The sign vsl_hello (vsl)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "vsl_hello_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "vsl_hello_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "gloss": "headshake_negate",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "headshake_negate",
+    "vocab": [
+      {
+        "form": "headshake_negate",
+        "pos": "body_part",
+        "gloss_en": "headshake_negate",
+        "example_en": "The sign headshake_negate (body)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "headshake_negate_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "headshake_negate_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

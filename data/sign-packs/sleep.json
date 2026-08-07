@@ -1,0 +1,42 @@
+{
+  "gloss": "sleep",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "sleep",
+    "vocab": [
+      {
+        "form": "sleep",
+        "pos": "noun",
+        "gloss_en": "sleep",
+        "example_en": "The sign sleep (action)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "sleep_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "sleep_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

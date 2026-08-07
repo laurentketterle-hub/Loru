@@ -1,0 +1,42 @@
+{
+  "gloss": "eat_food",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "eat_food",
+    "vocab": [
+      {
+        "form": "eat_food",
+        "pos": "food",
+        "gloss_en": "eat_food",
+        "example_en": "The sign eat_food (food)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "eat_food_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "eat_food_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

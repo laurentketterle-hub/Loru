@@ -1,0 +1,42 @@
+{
+  "gloss": "handshape_w",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "handshape_w",
+    "vocab": [
+      {
+        "form": "handshape_w",
+        "pos": "handshape",
+        "gloss_en": "handshape_w",
+        "example_en": "The sign handshape_w (handshape)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "handshape_w_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "w",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "handshape_w_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "w",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

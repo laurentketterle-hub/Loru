@@ -1,0 +1,42 @@
+{
+  "gloss": "body_shift_left",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "body_shift_left",
+    "vocab": [
+      {
+        "form": "body_shift_left",
+        "pos": "body_part",
+        "gloss_en": "body_shift_left",
+        "example_en": "The sign body_shift_left (body)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "body_shift_left_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "body_shift_left_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

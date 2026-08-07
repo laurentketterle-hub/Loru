@@ -1,0 +1,42 @@
+{
+  "gloss": "work_action",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "work_action",
+    "vocab": [
+      {
+        "form": "work_action",
+        "pos": "noun",
+        "gloss_en": "work_action",
+        "example_en": "The sign work_action (action)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "work_action_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "work_action_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

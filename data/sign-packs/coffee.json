@@ -1,0 +1,42 @@
+{
+  "gloss": "coffee",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "coffee",
+    "vocab": [
+      {
+        "form": "coffee",
+        "pos": "food",
+        "gloss_en": "coffee",
+        "example_en": "The sign coffee (food)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "coffee_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "coffee_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

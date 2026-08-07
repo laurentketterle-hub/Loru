@@ -1,0 +1,42 @@
+{
+  "gloss": "classifier_vehicle_drive",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "classifier_vehicle_drive",
+    "vocab": [
+      {
+        "form": "classifier_vehicle_drive",
+        "pos": "classifier",
+        "gloss_en": "classifier_vehicle_drive",
+        "example_en": "The sign classifier_vehicle_drive (classifier)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "classifier_vehicle_drive_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "classifier_vehicle_drive_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "gloss": "handshape_o",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "handshape_o",
+    "vocab": [
+      {
+        "form": "handshape_o",
+        "pos": "handshape",
+        "gloss_en": "handshape_o",
+        "example_en": "The sign handshape_o (handshape)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "handshape_o_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "o",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "handshape_o_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "o",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

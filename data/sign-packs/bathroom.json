@@ -1,0 +1,42 @@
+{
+  "gloss": "bathroom",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "bathroom",
+    "vocab": [
+      {
+        "form": "bathroom",
+        "pos": "noun",
+        "gloss_en": "bathroom",
+        "example_en": "The sign bathroom (place)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "bathroom_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "bathroom_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

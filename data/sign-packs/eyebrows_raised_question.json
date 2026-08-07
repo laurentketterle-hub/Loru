@@ -1,0 +1,42 @@
+{
+  "gloss": "eyebrows_raised_question",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "eyebrows_raised_question",
+    "vocab": [
+      {
+        "form": "eyebrows_raised_question",
+        "pos": "body_part",
+        "gloss_en": "eyebrows_raised_question",
+        "example_en": "The sign eyebrows_raised_question (body)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "eyebrows_raised_question_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "eyebrows_raised_question_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

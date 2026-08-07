@@ -1,0 +1,42 @@
+{
+  "gloss": "number_2",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "number_2",
+    "vocab": [
+      {
+        "form": "number_2",
+        "pos": "number",
+        "gloss_en": "number_2",
+        "example_en": "The sign number_2 (number)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "number_2_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "number_2_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

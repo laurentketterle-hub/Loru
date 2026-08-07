@@ -1,0 +1,42 @@
+{
+  "gloss": "point_locus_right",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "point_locus_right",
+    "vocab": [
+      {
+        "form": "point_locus_right",
+        "pos": "body_part",
+        "gloss_en": "point_locus_right",
+        "example_en": "The sign point_locus_right (body)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "point_locus_right_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "point_locus_right_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}

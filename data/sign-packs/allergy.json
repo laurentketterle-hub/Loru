@@ -1,0 +1,42 @@
+{
+  "gloss": "allergy",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "photo/video + landmarks",
+    "source_language": "en",
+    "gloss": "allergy",
+    "vocab": [
+      {
+        "form": "allergy",
+        "pos": "emergency",
+        "gloss_en": "allergy",
+        "example_en": "The sign allergy (emergency)."
+      }
+    ],
+    "frames": [
+      {
+        "id": "allergy_f0",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "hold",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "allergy_f1",
+        "duration_ms": 500,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "neutral",
+          "non_dominant": "rest",
+          "movement": "transition",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}
