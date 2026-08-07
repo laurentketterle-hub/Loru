@@ -67,17 +67,65 @@ class Pyttsx3TTS(TextToSpeech):
         return out_path
 
 
+class EdgeTTSTTS(TextToSpeech):
+    """Microsoft Edge TTS backend via edge-tts (requires internet, good quality).
+
+    LORU_TTS=edge — uses Microsoft's free cloud TTS voices.
+    Falls back gracefully to OfflineStubTTS when edge-tts is unavailable.
+    """
+
+    def __init__(self, voice: str = "en-US-AriaNeural") -> None:
+        self._voice = voice
+
+    def speak(self, text: str, out_path: Path) -> Path:
+        import asyncio
+
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+
+        mp3_path = out_path.with_suffix(".mp3")
+        try:
+            asyncio.run(self._speak_async(text, mp3_path))
+        except Exception:
+            # If edge-tts fails (network, missing dep, etc.), fall back to stub
+            return OfflineStubTTS().speak(text, out_path)
+
+        out_path.with_suffix(".txt").write_text(text, encoding="utf-8")
+
+        if not mp3_path.exists() or mp3_path.stat().st_size < 100:
+            return OfflineStubTTS().speak(text, out_path)
+
+        return mp3_path
+
+    async def _speak_async(self, text: str, mp3_path: Path) -> None:
+        import edge_tts  # type: ignore
+
+        communicate = edge_tts.Communicate(text, self._voice)
+        await communicate.save(str(mp3_path))
+
+
 def get_default_tts() -> TextToSpeech:
     import os
 
     prefer = (os.getenv("LORU_TTS") or "auto").strip().lower()
+
     if prefer in {"stub", "offline", "tone"}:
         return OfflineStubTTS()
+
+    # 1. Try pyttsx3 first (fast, offline)
     if prefer in {"pyttsx3", "native", "auto"}:
         try:
             return Pyttsx3TTS()
         except Exception:
             if prefer == "pyttsx3":
                 raise
-            return OfflineStubTTS()
+
+    # 2. Try edge-tts (requires internet, good quality)
+    if prefer in {"edge", "auto"}:
+        try:
+            return EdgeTTSTTS()
+        except Exception:
+            if prefer == "edge":
+                raise
+
+    # 3. Final fallback: offline stub tone
     return OfflineStubTTS()
