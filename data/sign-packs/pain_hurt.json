@@ -1,0 +1,42 @@
+{
+  "gloss": "pain_hurt",
+  "wave": 2,
+  "sign_pack": {
+    "contributor": "laurentketterle-hub",
+    "notes": "Sign pack for pain_hurt (emergency) - Pain / hurt",
+    "source_language": "en",
+    "gloss": "pain_hurt",
+    "vocab": [
+      {
+        "form": "pain_hurt",
+        "pos": "noun",
+        "gloss_en": "pain_hurt",
+        "example_en": "Example usage of pain_hurt in context"
+      }
+    ],
+    "frames": [
+      {
+        "id": "pain_hurt_frame_0",
+        "duration_ms": 600,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "forward",
+          "non_dominant": "rest",
+          "movement": "pain_hurt_motion",
+          "location": "neutral_space"
+        }
+      },
+      {
+        "id": "pain_hurt_frame_1",
+        "duration_ms": 400,
+        "pose": {
+          "handshape": "flat_hand",
+          "palm_orientation": "forward",
+          "non_dominant": "rest",
+          "movement": "pain_hurt_motion",
+          "location": "neutral_space"
+        }
+      }
+    ]
+  }
+}
