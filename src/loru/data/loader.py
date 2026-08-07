@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 
 from loru.config import SAMPLES_DIR
+from loru.data.schema import SampleRecord
 
 
 def list_sample_files(directory: Path | None = None) -> list[Path]:
@@ -19,6 +20,8 @@ def _load_payload(path: Path) -> dict:
     payload = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(payload, dict):
         raise ValueError(f"sample must be a JSON object: {path}")
+    # Validate via Pydantic before returning raw dict.
+    SampleRecord.model_validate(payload)
     return payload
 
 
