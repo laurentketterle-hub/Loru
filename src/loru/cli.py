@@ -241,6 +241,53 @@ def data_list() -> None:
     console.print(table)
 
 
+@gloss_app.command("heatmap")
+def gloss_heatmap() -> None:
+    """Rich color heatmap showing DEFAULT_GLOSS entries with/without bundled samples."""
+    from rich.panel import Panel
+    from rich.text import Text
+
+    files = {p.stem for p in list_sample_files()}
+    total = len(DEFAULT_GLOSS)
+    have = sum(1 for g in DEFAULT_GLOSS if g in files)
+    missing = total - have
+
+    # Build a color-coded grid: green=has sample, red=missing
+    blocks_per_row = 10
+    lines = []
+    for i in range(0, total, blocks_per_row):
+        chunk = DEFAULT_GLOSS[i : i + blocks_per_row]
+        line = Text()
+        for g in chunk:
+            if g in files:
+                line.append(" #", style="bold green on dark_green")
+            else:
+                line.append(" -", style="bold red on dark_red")
+        line.append(" ")
+        for g in chunk:
+            label = g[:8].ljust(8)
+            style = "green" if g in files else "red"
+            line.append(f" {label}", style=style)
+        lines.append(line)
+
+    console.print(
+        Panel.fit(
+            Text("\n").join(lines),
+            title=f"Gloss coverage heatmap  {have}/{total} samples  "
+                  f"({round(have/total*100 if total else 0)}%)  "
+                  f"{missing} missing",
+            border_style="cyan",
+        )
+    )
+    # List missing entries
+    missing_list = [g for g in DEFAULT_GLOSS if g not in files]
+    if missing_list:
+        console.print("[yellow bold]Missing gloss entries:[/yellow bold]")
+        console.print("  " + ", ".join(missing_list))
+    else:
+        console.print("[green bold]All gloss entries have bundled samples![/green bold]")
+
+
 @gloss_app.command("compare")
 def gloss_compare(
     sample_a: Path = typer.Option(..., "--a", exists=True, dir_okay=False),

@@ -43,3 +43,11 @@ def test_samples_list_reports_empty_filter_result(tmp_path: Path) -> None:
 
     assert result.exit_code == 0
     assert "No samples matching gloss 'missing'" in result.stdout
+
+
+def test_gloss_heatmap_renders() -> None:
+    """gloss heatmap prints a color-coded grid of gloss coverage."""
+    result = runner.invoke(app, ["gloss", "heatmap"])
+    assert result.exit_code == 0, result.output
+    # Should mention the heatmap title
+    assert "Gloss coverage heatmap" in result.stdout
